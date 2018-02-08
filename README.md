@@ -1,5 +1,58 @@
 This project purpose is to showcase the ability of the developer using React Js.
 
+Surge Deployment:
+ $ cd app_dir
+ $ npm install -g surge
+ $ npm run build
+ $ surge
+  # If this is your first time running surge, you'll be prompted to create an account.
+  # Add you email and passwordm then hit enter.
+  # If your project path is path/to/my-project, edit this to path/to/my-project/build, then press enter.
+  # Once done, visit the url in browser, e.g. aldrienhate.surge.sh
+
+Github Deployment:
+  # Step 1
+    Edit package.json by adding a new field named homepage:
+
+    "homepage": "https://<github-username>.github.io/<project-repo>"
+    
+    If your GitHub username is george-lucas, and your project's GitHub repository is SithJS, the value of the homepage field should be "https://george-lucas.github.io/SithJS".
+
+    Let’s run again after the change:
+
+    $ npm run build
+
+    new output after adding a `homepage` field in `package.json`
+    Did you notice the new output above? The create-react-app CLI is walking us through the entire process. Pretty snazzy.
+
+  # Step 2
+    Next you need to install the gh-pages plugin. This will allow us to publish to the gh-pages branch on GitHub straight from within the terminal:
+
+    $ npm install --save-dev gh-pages
+    
+    gh-pages is a special branch that GitHub Pages uses to publish projects. The beautiful thing about it is that the branch lives in the same repository as your project’s code, but doesn’t affect the project itself.
+
+    Note that if you already have a gh-pages branch in your project's repository, it will update the branch accordingly. If the branch doesn't exist, it will create it on the fly.
+
+  # Step 3
+    Add a new script to the scripts field inside package.json. Let’s call the script deploy:
+
+    "deploy" : "npm run build&&gh-pages -d build"
+    And finally let’s run it:
+
+    $ npm run deploy
+
+    npm run deploy will first build your project via npm run build. Then it will publish it to a gh-pages branch on GitHub via gh-pages -d build.
+
+  # Step 4
+    We’re almost done. Head to your project’s repository settings on GitHub. In the GitHub Pages section, confirm that your project is set to use the gh-pages branch.
+
+
+    An example of my React todo list using the gh-pages branch
+    You can now navigate to the URL you entered in the homepage field of your package.json file, where you’ll see your project has been deployed!
+
+
+
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 

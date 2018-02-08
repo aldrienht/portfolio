@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Aldrien from '../aldrien.jpg'
 
 export default class NavigationLinks extends React.Component{
 	render(){
@@ -8,7 +9,7 @@ export default class NavigationLinks extends React.Component{
 	      <a className="navbar-brand" href="/about">
 	        <span className="d-block d-lg-none">Aldrien Hate</span>
 	        <span className="d-none d-lg-block">
-	          <img className="img-fluid img-profile rounded-circle mx-auto mb-2" src="./img/aldrien.jpg" alt="" />
+	          <img className="img-fluid img-profile rounded-circle mx-auto mb-2" src={Aldrien} alt="" />
 	        </span>
 	      </a>
 	      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
