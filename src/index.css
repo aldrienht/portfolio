@@ -1,0 +1,41 @@
+.not_found{
+	font-size: 20px;
+	margin-top: 30px;
+	color: #eee;
+}
+ul.contact_ways{margin-left: 0px !important;}
+ul.contact_ways>li{margin-bottom: 10px;}
+ul.contact_ways>li>i{margin-right: 10px; color: #bd5d38;}
+.web_url{
+	text-transform: lowercase;
+}
+.orange{color: #bd5d38 !important; font-weight: bold;}
+.bg-404{
+  text-align: center;
+  font-size: 15em;
+  color: #b9b9b9;
+  font-weight: bold;
+}
+.text-404{
+	text-align: center;
+  font-size: 3em;
+  color: #b9b9b9;
+  font-weight: bold;
+  margin-top: -60px;
+}
+.activeNav{
+  color: #555 !important;
+  background-color: #ffffff73 !important;
+}
+.work_experience, .references{border-bottom: 1px solid #eee;margin-bottom: 10px;}
+.public_profile{margin-top: 30px;}
+.spinner{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 100%;
+  padding-top: 10%;
+}
