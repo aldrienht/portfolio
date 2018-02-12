@@ -1,9 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Aldrien from '../aldrien.jpg'
+import { withRouter } from 'react-router-dom';
 
-export default class NavigationLinks extends React.Component{
+class NavigationLinks extends React.Component{
 	render(){
+		const default_path = (this.props.match.path === '/' || this.props.match.path === '/about')
+
 		return(
 	    <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
 	      <a className="navbar-brand" href="/about">
@@ -18,7 +21,7 @@ export default class NavigationLinks extends React.Component{
 	      <div className="collapse navbar-collapse" id="navbarSupportedContent">
 	        <ul className="navbar-nav">
 	          <li className="nav-item">
-	            <NavLink exact activeClassName="activeNav" className="nav-link" to="/about">About</NavLink>
+	            <NavLink exact className={default_path ? "activeNav nav-link" : 'nav-link'} to="/about">About</NavLink>
 	          </li>
 	          <li className="nav-item">
 	            <NavLink exact activeClassName="activeNav" className="nav-link" to="/work_experience">Work Experience</NavLink>
@@ -44,3 +47,5 @@ export default class NavigationLinks extends React.Component{
 		);
 	}
 }
+
+export default withRouter(NavigationLinks);
