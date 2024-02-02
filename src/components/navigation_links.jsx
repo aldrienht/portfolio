@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Aldrien from '../aldrien.jpg'
+import Aldrien from '../../public/aldrien.jpg'
 import { withRouter } from 'react-router-dom';
 
 class NavigationLinks extends React.Component{

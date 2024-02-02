@@ -6,8 +6,7 @@ export const BasicInfo = {
 };
 
 export const professionalOverview = `
-	I've been working for 6 years as a software developer, focusing on Ruby on Rails development.
-  I do backend, like data management/manipulations, unit & integration testing (RSPEC, Minitest, Cucumber) and creating APIs, and also do front-end development using ReactJs.
+I have been in the software engineering industry for more than a decade, my experiences and knowledge gained are my assets. Technology is rapidly evolving, with new developments constantly emerging - I always willing to learn new things in order to stay fit for my work position.
 `;
 
 export const PublicProfileLinks = [
@@ -23,6 +22,14 @@ export const Education = [
 ];
 
 export const WorkExperiences = [
+	{ 
+		position: 'FullStack Ruby on Rails Developer',
+		date: 'Feb 2018 - Jan 2024',
+		company: 'Heavyweight Ecommerse App Ltd. / BoosterSEO / Rivo',
+		location: 'Remote • Las Vegas, Nevada',
+		website: 'https://www.boosterseo.com | https://www.rivo.io',
+		description: ''
+	},
 	{ 
 		position: 'Ruby on Rails Developer',
 		date: 'May 2017 - Nov 2017',
@@ -56,15 +63,7 @@ export const WorkExperiences = [
 		description: ''
 	},
 	{
-		position: 'Admin/Student Assistant',
-		date: 'Jun 2009 - Mar 2012',
-		company: 'Mondriaan Aura College',
-		location: 'Subic Bay Freeport Zone, Philippines',
-		website: 'http://www.aura.edu.ph',
-		description: ''
-	},
-	{
-		position: 'Assistant Web Developer/Designer (OJT)',
+		position: 'Assistant Web Developer/Designer',
 		date: 'Apr 2011 - Jun 2011',
 		company: 'Subic Bay Yacht Club',
 		location: 'Subic Bay Freeport Zone, Philippines',
