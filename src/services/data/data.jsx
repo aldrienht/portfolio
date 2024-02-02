@@ -144,7 +144,8 @@ export const ContactWays = [
 	{ icon: 'icon fa fa-skype fa-2x', type: 'skype', text: 'aldrienhate' },
 	{ icon: 'icon fa fa-linkedin fa-2x', type: 'linkedin', text: 'https://www.linkedin.com/in/aldrien-hate-29bb5870' },
 	{ icon: 'icon fa fa-mobile fa-3x', type: 'number', text: '+63 949 434 5804' },
-	{ icon: 'icon fa fa-facebook fa-2x', type: 'facebook', text: 'https://www.facebook.com/aldrienhate' }
+	{ icon: 'icon fa fa-facebook fa-2x', type: 'facebook', text: 'https://www.facebook.com/aldrienhate' },
+	{ icon: 'icon fa fa-github fa-2x', type: 'github', text: 'https://github.com/aldrienht' },
 ];
 
 export const Interests = `
